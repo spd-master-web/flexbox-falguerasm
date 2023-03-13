@@ -3,21 +3,16 @@
 body{
     margin: 0;
 }
-a{
-    text-decoration: underline #f00;
+
+h2{
+    color: #fff;
+    margin: 0;
     font-family: sans-serif;
-    color: #f00;
-}
-li{
-    border-right: 1px solid #f00;
-    padding: 16px;
-    text-align: center;
-}
-.last{
-    border: none;
+    font-size: 24px;
+    text-decoration: underline;
 }
 
-.wraper{
+header{
     margin: 0 auto;
     margin-top: 100px;
     width: 700px;
@@ -30,13 +25,10 @@ li{
     flex-wrap: nowrap;
     
     justify-content: space-between;
-    align-items: center;
-}
-nav{
-    height: 100%;
+    align-items: baseline;
 }
 
-.title{
+header > a {
     height: 100%;
     padding: 0px 16px;
     background-color: #f00;
@@ -49,14 +41,8 @@ nav{
     justify-content: center;
     align-items: center;
 }
-h1{
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 24px;
-    text-decoration: underline;
-}
 
-.nav{
+nav{
     height: 100%;
     margin: 0;
     padding: 0;
@@ -70,3 +56,25 @@ h1{
     justify-content: center;
     align-items: center;
 }
+
+nav > a{
+    text-decoration: underline #f00;
+    font-family: sans-serif;
+    color: #f00;
+
+    border-left: 1px solid #f00;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/*
+nav > a:nth-child(odd){
+    background-color: aqua;
+}
+nav > a:nth-child(even){
+    background-color: yellow;
+}
+nav > a:first-child{
+    background-color: green;
+}
+*/

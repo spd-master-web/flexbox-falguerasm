@@ -1,0 +1,16 @@
+*{ box-sizing: border-box; }
+body{
+    margin: 0;
+}
+
+/*BEM Block Element Modifier*/
+.flex-container{
+    border: 2px dashed black;
+}
+.flex-container_item{
+    border: 2px solid pink;
+}
+/*
+._item_title{
+    border: 2px solid pink;
+}

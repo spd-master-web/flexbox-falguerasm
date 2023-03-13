@@ -1,32 +1,49 @@
+/*
+ORDER CSS
+1. box-model
+2. width, height, margin,padding
+3. positioning, display
+4. Styling
+*/
+
 *{ box-sizing: border-box; }
 
 body{
     margin: 0;
 }
-.wraper{
-    margin: 0 auto;
-    height: 700px;
+
+.wraper-main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.wraper-box{
     width: 800px;
+    height: 700px;
+    margin: 100px;
+
     border: 2px dashed #000;
 }
-nav{
+
+section{
     height: 100%;
 }
-li{
-    border: 5px solid #f00;
+article{
     padding: 50px;
+    
+    border: 5px solid #f00;
 }
 .ex1{
     height: 100%;
     margin: 0;
     padding: 0;
-    list-style: none;
     
     display: flex;
-
     flex-direction: column;
     flex-wrap: nowrap;
-    
     justify-content: center;
     align-items: center;
 }
@@ -39,13 +56,10 @@ li{
     height: 100%;
     margin: 0;
     padding: 0;
-    list-style: none;
     
     display: flex;
-
     flex-direction: row;
     flex-wrap: nowrap;
-    
     justify-content: center;
     align-items: center;
 }
@@ -61,16 +75,13 @@ li{
 }
 
 .ex3{
-    height: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
-    list-style: none;
     
     display: flex;
-
     flex-direction: column-reverse;
     flex-wrap: nowrap;
-    
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
